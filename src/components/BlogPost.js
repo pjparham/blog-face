@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { PostContainer, Title, EditButton, UserName, TitleContainer, ButtonContainer, LikeButton } from "./BlogPostElements";
-import EditPost from "../EditPost";
-import Likes from "../Likes";
+import { PostContainer, Title, EditButton, UserName, TitleContainer, ButtonContainer, LikeButton } from "./StyledComponents/BlogPostElements";
+import EditPost from "./EditPost";
+import Likes from "./Likes";
 import { Link } from 'react-router-dom'
 
 function BlogPost({ post, user, handleUpdatePost, handleDeletePost }){

@@ -1,5 +1,5 @@
 import React from 'react'
-import { PostContainer, UserName } from "./CommentElements" 
+import { PostContainer, UserName } from "./StyledComponents/CommentElements" 
 
 function Comment({ comment }) {
 

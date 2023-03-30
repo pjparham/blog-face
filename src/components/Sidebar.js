@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideButtonWrap, SidebarRoute} from "./SidebarElements"
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideButtonWrap, SidebarRoute} from "./StyledComponents/SidebarElements"
 import { useAuth0 } from '@auth0/auth0-react'
 
 function Sidebar({isOpen, toggleSidebar, setUser}) {
@@ -18,7 +18,7 @@ function Sidebar({isOpen, toggleSidebar, setUser}) {
             <CloseIcon />
         </Icon>
         <div className="logoContainer">
-            <img className="sidebarLogo" src={require('../../images/blogface_logo.png')} alt='logo' />
+            <img className="sidebarLogo" src={require('./../images/blogface_logo.png')} alt='logo' />
         </div>
         <SidebarWrapper>
             <SidebarMenu>

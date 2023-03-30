@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import {Nav, NavLink, WebTitle, Bars, NavMenu, NavBtnLink} from './NavbarElements'
+import {Nav, NavLink, WebTitle, Bars, NavMenu, NavBtnLink} from './StyledComponents/NavbarElements'
 import { useAuth0 } from '@auth0/auth0-react'
 
 function NavBar({ setUser, toggleSidebar }){
@@ -17,8 +17,8 @@ function NavBar({ setUser, toggleSidebar }){
         <>
             <Nav>
                 <NavLink className="home-button" to="/">
-                    <img className="logo" src={require('../../images/blogface_logo.png')} alt='logo' />
-                    <WebTitle className="title" src={require('../../images/blogface_title.png')} alt='title' />
+                    <img className="logo" src={require('./../images/blogface_logo.png')} alt='logo' />
+                    <WebTitle className="title" src={require('./../images/blogface_title.png')} alt='title' />
                 </NavLink>
                 <Bars onClick={toggleSidebar}/>
                 <NavMenu>

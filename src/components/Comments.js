@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
-import Comment from '../Comment/Comment'
-import { CommentForm } from "./CommentsElements"
+import Comment from './Comment'
+
 
 function Comments({post, user}) {
     const [commentText, setCommentText] = useState("")
@@ -39,7 +39,7 @@ function Comments({post, user}) {
         {displayComments}
         <h3>Write comment...</h3>
         <form onSubmit={onSubmit}>
-            <CommentForm value={commentText} onChange={(e)=>setCommentText(e.target.value)} className="body-input" type="textarea" id="body" name="body"></CommentForm><br></br>
+            <textarea className='comment-input' value={commentText} onChange={(e)=>setCommentText(e.target.value)} type="textarea" id="body" name="body"></textarea><br></br>
             <input type="submit" value="Submit"/>
         </form>
     </div>

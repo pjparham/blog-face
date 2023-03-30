@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
-import { InputField, BodyInput, SubmitPost } from "./CreatePostElements"
+import { InputField, BodyInput, SubmitPost } from "./StyledComponents/CreatePostElements"
 
 function CreatePost({ handleAddPost, user }) {
-    // const [title, setTitle] = useState("")
-    // const [subtitle, setSubtitle] = useState("")
-    // const [body, setBody] = useState("")
     const [newPost, setNewPost] = useState({
         "title": "",
         "subtitle": "",
@@ -26,15 +23,6 @@ console.log(newPost)
 
    function handleSubmit(e){
         e.preventDefault();
-        // const newPost = {
-        //     "title": title,
-        //     "subhead": subtitle,
-        //     "body": body,
-        //     "user": user.sub,
-        //     "userName": (user.given_name + " " + user.family_name),
-        //     "comments": [],
-        //     "likes": [],
-        // }
         fetch('http://localhost:3004/posts', {
             method: "POST",
             headers: {
@@ -44,16 +32,12 @@ console.log(newPost)
         })
         .then((r) => r.json())
         .then((newPost) => handleAddPost(newPost))
-        // setTitle("")
-        // setSubtitle("")
-        // setBody("")
         setNewPost({
             ...newPost,
             "title": "",
             "subtitle": "",
             "body": ""
         })
-        console.log(newPost)
         alert('Your post was submitted. Check out the home page to see it!')
    }
   return (

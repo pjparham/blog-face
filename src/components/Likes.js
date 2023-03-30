@@ -1,5 +1,5 @@
 import React from 'react'
-import { LikeButton } from "./LikesElements"
+import { LikeButton } from "./StyledComponents/LikesElements"
 
 function Likes({ post, user, handleUpdatePost }) {
 

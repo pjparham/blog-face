@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { PostContainer, Title, EditButton, UserName, TitleContainer, ButtonContainer } from "./PostDetailsElements";
-import EditPost from "../EditPost";
-import Comments from '../Comments';
-import Likes from '../Likes';
+import { PostContainer, Title, EditButton, UserName, TitleContainer, ButtonContainer } from "./StyledComponents/PostDetailsElements";
+import EditPost from "./EditPost";
+import Comments from './Comments';
+import Likes from './Likes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 

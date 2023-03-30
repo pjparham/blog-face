@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogPosts from '../BlogPosts';
+import BlogPosts from './BlogPosts';
 
 function Profile({ user, posts, handleUpdatePost, handleDeletePost, search, setSearch }) {
 

@@ -18,7 +18,6 @@ function CreatePost({ handleAddPost, user }) {
             [e.target.name]: e.target.value,
         })
     }
-console.log(newPost)
 
 
    function handleSubmit(e){

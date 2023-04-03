@@ -2,15 +2,14 @@
   "posts": [
     {
       "id": 1,
-      "title": "React 101",
-      "subtitle": "Some basics to get you started with React",
+      "title": "React 101!",
+      "subtitle": "Some basics to get you started with React!",
       "body": "React apps are build using components. These components are used to give you flexibility when writing code.",
       "user": "google-oauth2|108105217762258962502",
       "userName": "Parker Parham",
       "likes": [
         "auth0|633f83175615e6a1bdb51881",
-        "google-oauth2|109716251858905425458",
-        "google-oauth2|108105217762258962502"
+        "google-oauth2|109716251858905425458"
       ],
       "comments": [
         {
@@ -27,8 +26,19 @@
           "text": "Thanks for this.",
           "id": 11,
           "username": "Miguel Tapia"
+        },
+        {
+          "text": "Testings",
+          "id": 4,
+          "username": "Parker Parham"
+        },
+        {
+          "text": "Testing 1",
+          "id": 5,
+          "username": "Parker Parham"
         }
-      ]
+      ],
+      "subhead": "Some basics to get you started with React"
     },
     {
       "id": 2,
@@ -58,6 +68,11 @@
           "text": "Awesome post!",
           "id": 4,
           "username": "Miguel Tapia"
+        },
+        {
+          "text": "Great article!",
+          "id": 5,
+          "username": "Parker Parham"
         }
       ]
     },
@@ -69,7 +84,8 @@
       "id": 6,
       "userName": "Parker Parham",
       "likes": [
-        "auth0|633f83175615e6a1bdb51881"
+        "auth0|633f83175615e6a1bdb51881",
+        "google-oauth2|108105217762258962502"
       ],
       "comments": [
         {
@@ -100,6 +116,17 @@
         "google-oauth2|109716251858905425458"
       ],
       "id": 9
+    },
+    {
+      "title": "Testing 1 !",
+      "subtitle": "Testings ",
+      "body": "Testing ",
+      "user": "google-oauth2|108105217762258962502",
+      "userName": "Parker Parham",
+      "comments": [],
+      "likes": [],
+      "id": 10,
+      "subhead": "Testing"
     }
   ]
 }

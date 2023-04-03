@@ -20,7 +20,7 @@ function App() {
   function toggleSidebar(){
     setIsOpen(!isOpen)
   }
-  console.log(posts)
+
 
   useEffect(() => {
     fetch('http://localhost:3004/posts')
@@ -90,6 +90,7 @@ function App() {
                                             />} />
         <Route path='/about' exact element={<About/>} />
         <Route path='/posts/:id' element={<PostDetails 
+                                            posts={posts}
                                             user={user} 
                                             handleDeletePost={handleDeletePost} 
                                             handleUpdatePost={handleUpdatePost}

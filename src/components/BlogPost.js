@@ -39,8 +39,8 @@ function BlogPost({ post, user, handleUpdatePost, handleDeletePost }){
             {post.userName ? <UserName>By: {post.userName}</UserName> : null}
             <h4>{subtitle}</h4>
             <Link className="pageLink" to={`/posts/${post.id}`}>See more</Link>
-            <Likes user={user} post={post} handleUpdatePost={handleUpdatePost} />
-            { edit ? <EditPost setEdit={setEdit} handleUpdatePost={handleUpdatePost} post={post} /> : null}
+            <Likes user={user} post={post} updatePost={handleUpdatePost} />
+            { edit ? <EditPost setEdit={setEdit} updatePost={handleUpdatePost} post={post} /> : null}
         </PostContainer>
     )
 }

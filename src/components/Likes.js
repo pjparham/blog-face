@@ -1,7 +1,7 @@
 import React from 'react'
 import { LikeButton } from "./StyledComponents/LikesElements"
 
-function Likes({ post, user, handleUpdatePost }) {
+function Likes({ post, user, handleUpdatePost, setPost, updatePost }) {
 
     function handleLike(e){
         e.preventDefault();
@@ -16,7 +16,7 @@ function Likes({ post, user, handleUpdatePost }) {
                 body: JSON.stringify(updatedLikeArray)
             })
             .then((r) => r.json())
-            .then((updatedPost) => handleUpdatePost(updatedPost))
+            .then((updatedPost) => updatePost(updatedPost))
         }
         else{
             const updatedPost = {
@@ -30,7 +30,7 @@ function Likes({ post, user, handleUpdatePost }) {
                 body: JSON.stringify(updatedPost)
             })
             .then((r) => r.json())
-            .then((updatedPost) => handleUpdatePost(updatedPost))
+            .then((updatedPost) => updatePost(updatedPost))
         }
     }
 

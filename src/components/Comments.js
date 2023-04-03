@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
 import Comment from './Comment'
+import { SubmitPost } from "./StyledComponents/CreatePostElements"
 
 
 function Comments({post, user}) {
@@ -40,7 +41,7 @@ function Comments({post, user}) {
         <h3>Write comment...</h3>
         <form onSubmit={onSubmit}>
             <textarea className='comment-input' value={commentText} onChange={(e)=>setCommentText(e.target.value)} type="textarea" id="body" name="body"></textarea><br></br>
-            <input type="submit" value="Submit"/>
+            <SubmitPost type="submit" value="Submit"/>
         </form>
     </div>
   )
